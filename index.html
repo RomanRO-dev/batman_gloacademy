@@ -7,12 +7,14 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap&subset=cyrillic" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap&subset=cyrillic" rel="stylesheet"> 
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css"> 
 </head>
 <body>
     <!-- All content from site -->
     <div class="container">
-        <header class="header">
+        <header class="header animated bounceInDown">
             <div class="logo">КиноПульс</div>
             <form action="" class="search">
                 <input type="search" class="search-input" placeholder="Фильмы, сериалы, актеры">
@@ -27,18 +29,18 @@
         </header>
 
         <main class="main">
-            <h1 class="title">Бэтмен</h1>
-            <small class="title-en">The Batman</small>
-            <div class="info">
+            <h1 class="title animated bounceInRight">Бэтмен</h1>
+            <small class="title-en animated bounceInRight">The Batman</small>
+            <div class="info animated bounceInUp">
                 <div class="movie-info">
                     <span class="tag">Фильм</span>
                     <span class="country">США, 2021год</span>
-                    <a href="" class="play">Смотреть Трейлер</a>
+                    <a data-fancybox href="https://www.youtube.com/watch?v=6Vc0xXO_Sbs" class="play">Смотреть Трейлер</a>
                 </div>
                 <a href="" class="more">Подробнее</a>
             </div>
 
-            <div class="content">
+            <div class="content animated bounceInUp">
                 <div class="short-info">
                     <img src="img/cover.jpg" alt="" class="poster">
                     <button class="button">Буду смотреть</button>
@@ -60,20 +62,20 @@
 
                 <div class="full-info">
                     <nav class="tabs">
-                        <a href="#" class="tabs-item tabs-item-active">Описание</a>
-                        <a href="#" class="tabs-item">Рецензии</a>
-                        <a href="#" class="tabs-item">Премьеры</a>
-                        <a href="#" class="tabs-item">Актеры</a>
-                        <a href="#" class="tabs-item">Награды</a>
-                        <a href="#" class="tabs-item">Факты</a>
-                        <a href="#" class="tabs-item">Сайты</a>
-                        <a href="#" class="tabs-item">
+                        <a href="#about" class="tabs-item tabs-item-active">Описание</a>
+                        <a href="#reviews" class="tabs-item">Рецензии</a>
+                        <a href="#premieres" class="tabs-item">Премьеры</a>
+                        <a href="#actors" class="tabs-item">Актеры</a>
+                        <a href="#prizes" class="tabs-item">Награды</a>
+                        <a href="#facts" class="tabs-item">Факты</a>
+                        <a href="#sites" class="tabs-item">Сайты</a>
+                        <a href="#tab" class="tabs-item">
                             <img src="img/bookmark-icon.svg" alt="boomark" class="bookmark-added">
                         </a>
                     </nav>
 
                     <div class="full-content">
-                        <div class="tabs-content">
+                        <div class="tabs-content visible" id="about">
                             <p class="text">Предстоящий американский супергеройский фильм, основанный на одноимённых комиксах издательства DC Comics. Картина будет выпущена компанией Warner Bros. и будет перезагрузкой всех фильмов о Бэтмене.</p><br>
                             <p class="text">Фильм является десятым по счёту фильмом из Расширенной вселенной DC. Режиссёром и сценаристом фильма выступит Мэтт Ривз, а главную роль исполнит Роберт Паттинсон</p><br>
                             <h4 class="text-title">Разработка</h4><br>
@@ -81,6 +83,69 @@
                             <p class="text">После выхода фильма «Бэтмен против Супермена: На заре справедливости» руководитель агентства WME Патрик Уайтсел подтвердил, что Аффлек написал сценарий для сольного фильма о Бэтмене и в настоящий момент его рассматривают студия и DC. В мае 2016 года Джереми Айронс подтвердил, что он появится в фильме про Тёмного Рыцаря. </p><br>
                             <p class="text">На Comic-Con в Сан-Диего в июле 2016 года было официально подтверждено, что Аффлек станет режиссёром картины. В августе 2016 года на одной из страниц Аффлека в социальных сетях был опубликован тестовый материал, в котором был показан персонаж Детстроук. 8 сентября 2016 года Джефф Джонс подтвердил, что Джо Манганьелло сыграет наёмника Слейда Уилсона, который, возможно, станет главным злодеем фильма.</p>
                         </div>
+                        <div class="tabs-content" id="reviews">
+                            <p class="text">Скоро здесь появятся рецензии</p><br>
+                        </div>
+                        <div class="tabs-content" id="premieres">
+                            <p class="text"><strong>24 июня 2021</strong> Аргентина</p><br>
+                            <p class="text"><strong>24 июня 2021</strong> Россия</p><br>
+                            <p class="text"><strong>24 июня 2021</strong> Словакия</p><br>
+                            <p class="text"><strong>25 июня 2021</strong> Американские Виргинские острова</p><br>
+                            <p class="text"><strong>25 июня 2021</strong> Бельгия</p><br>
+                            <p class="text"><strong>25 июня 2021</strong> Бразилия</p><br>
+                            <p class="text"><strong>25 июня 2021</strong> Великобритания</p><br>
+                            <p class="text"><strong>25 июня 2021</strong> Канада</p><br>
+                            <p class="text"><strong>25 июня 2021</strong> Литва</p><br>
+                            <p class="text"><strong>25 июня 2021</strong> Португалия</p><br>
+                            <p class="text"><strong>25 июня 2021</strong> США</p><br>
+                        </div>
+                        <div class="tabs-content tabs-content-actors" id="actors">
+                            <div class="main-actor">
+                                <div class="actor-exhample">
+                                    <img src="img/actors/robbert.jpg" class="actor-img" alt="actor">
+                                    <p class="actor-name"><strong>Роберт Паттинсон</strong></p>
+                                    <p class="actor-name">Брюс Уэйн / Бэтмен</p>
+                                </div>
+                                <div class="actor-exhample">
+                                    <img src="img/actors/zoe.jpg" class="actor-img" alt="actor">
+                                    <div class="actor-name"><strong>Зои Кравиц</strong></div>
+                                    <div class="actor-name">Селина Кайл </div>
+                                </div>
+                                <div class="actor-exhample">
+                                    <img src="img/actors/pol.jpg" class="actor-img" alt="actor">
+                                    <div class="actor-name"><strong>Пол Дано</strong></div>
+                                    <div class="actor-name">Эдвард Нэштон</div>
+                                </div>
+                                <div class="actor-exhample">
+                                    <img src="img/actors/jefry.jpg" class="actor-img" alt="actor">
+                                    <div class="actor-name"><strong>Джеффри Райт</strong></div>
+                                    <div class="actor-name">Джеймс Гордон</div>
+                                </div>
+                                <div class="actor-exhample">
+                                    <img src="img/actors/endy.jpg" class="actor-img" alt="actor">
+                                    <div class="actor-name"><strong>Энди Сёркис</strong></div>
+                                    <div class="actor-name">Альфред Пенниуорт</div>
+                                </div>
+                                <div class="actor-exhample">
+                                    <img src="img/actors/john.jpg" class="actor-img" alt="actor">
+                                    <div class="actor-name"><strong>Джон Туртурро</strong></div>
+                                    <div class="actor-name">Кармайн Фальконе</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs-content" id="prizes">
+                            <p class="text">У фильма пока нет наград.</p><br>
+                        </div>
+                        <div class="tabs-content" id="facts">
+                            <p class="text">Здесь скоро появятся Факты.</p><br>
+                        </div>
+                        <div class="tabs-content" id="sites">
+                            <p class="text">Cайты отсутствуют, но кто ищет, тот всегда найдёт!</p><br>
+                        </div>
+                        <div class="tabs-content" id="tab">
+                            <p class="text">Табы скоро появятся.</p><br>
+                        </div>
+
                         <div class="subscribe">
                             <h3 class="subscribe-title">Подпишитесь на обновления</h4>
                             <form action="#" class="subscribe-form">
@@ -102,5 +167,13 @@
         </main>
     </div>
     <!-- /.container -->
+
+
+    <!-- JQuery library conecting -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <!-- Adding fancebox -->
+    <script src="js/jquery.fancybox.min.js"></script>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
