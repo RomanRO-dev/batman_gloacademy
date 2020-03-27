@@ -339,6 +339,10 @@ body {
     .tabs-item:not(:last-child) {
         margin-right: 4%;
     }
+
+    .full-content {
+        flex-wrap: wrap;
+    }
 }
 @media (max-width: 992px) {
 
