@@ -234,7 +234,12 @@ body {
 }
 
 .tabs-content {
+    display: none;
     margin-right: 70px;
+}
+
+.visible {
+    display: block;
 }
 
 .tabs-item {
@@ -260,6 +265,30 @@ body {
     font-size: 16px;
     line-height: 140%;
     color: #000000;
+}
+
+.main-actor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.actor-exhample {
+    margin-bottom: 6%;
+}
+
+.actor-img {
+    width: 160px;
+    height: 183px;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.actor-name {
+    font-size: 16px;
+    line-height: 140%;
+    color: #000000;
+    margin-bottom: 5px;
 }
 
 .subscribe {
@@ -341,6 +370,10 @@ body {
     .actors-list {
         font-size: 14px;
     }
+
+    .actor-name {
+        font-size: 14px;
+    }
 }
 @media (max-width: 768px) {
     body {
@@ -361,6 +394,10 @@ body {
 
     .tabs-content {
         margin-right: 0;
+    }
+
+    .actor-name {
+        font-size: 14px;
     }
 }
 @media (max-width: 578px) {
@@ -433,5 +470,9 @@ body {
 
     .button {
         width: 100%;
+    }
+
+    .actor-name {
+        font-size: 14px;
     }
 }
